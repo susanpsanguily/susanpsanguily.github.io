@@ -1,0 +1,60 @@
+.img-flex{
+  display: block;
+  width: 100%;
+}
+.shadow-effect img{
+  border-style: solid;
+  border-width: 0px 0px 10px;
+  border-image: url(../img/project-demo/ellipse-shadow.png) 0 0 40 stretch;
+}
+
+.branding-project-demo-container{
+  height: 100%;
+  overflow: auto;
+  background: #E6E6E6;
+  padding: 40px 20px;
+  
+  .branding-project--phonics{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    &__box{
+      position: relative;
+    }
+    &__box-1{
+      width: 50%;
+      flex: 0 1 auto;
+      padding: 20px;
+    }
+    &__box-2{
+      padding: 20px;
+      width: 50%;
+      flex: 0 1 auto;
+      display: flex;
+      flex-wrap: wrap;
+      div{
+        flex: 0 1 auto;
+        width: 50%;
+      }
+      &__1{
+        padding: 0 10px 0 0;
+      }
+      &__2{
+        padding: 0 0 0 10px;
+      }
+      &__3{
+        padding: 10px 10px 0 0;
+      }
+      &__4{
+        padding: 10px 0 0 10px;
+      }
+    }
+    &__box-3{
+      float: right;
+    }
+    &__box-4{
+      
+    }
+  }
+}

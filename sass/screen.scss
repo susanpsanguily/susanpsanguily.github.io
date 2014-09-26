@@ -1,0 +1,36 @@
+@import "base/_reset";
+@import "base/_helpers";
+
+$pad: 40px;
+$max-width: 1200px;
+
+//colors
+$c-bg: #E6E6E6;
+$c-text: #666;
+$c-accent-1: rgb(106, 179, 178);
+
+@mixin sans{
+  font-family: 'Open Sans', sans-serif;
+} 
+
+@mixin serif{
+  font-family: 'Merriweather', serif;
+} 
+
+html, body{
+  height: 100%;
+  color: $c-text;
+}
+body{
+  @include sans;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+//custom pages
+@import "pages/_home";
+
+@import "temp/_grid";
+
+
+@import "temp/_branding-project-demo";

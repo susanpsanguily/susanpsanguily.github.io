@@ -1,0 +1,189 @@
+.section--branding__grid {
+  overflow: hidden;
+  padding: 1em 0;
+  list-style: none;
+  text-align: center;
+  margin: 0 -10px;
+}
+
+
+/* Common style */
+.section--branding__grid-item-sizer{
+   height: 0;
+   padding-bottom: 100%;
+
+} 
+.section--branding__grid-item {
+  position: relative;
+  margin: 10px;
+  z-index: 1;
+  float: left;
+  overflow: hidden;
+  width: calc(25% - 20px);
+  @media (max-width: 860px){
+    width: calc(50% - 20px);
+  }
+  @media (max-width: 460px){
+    width: calc(100% - 20px);
+  }
+  text-align: center;
+  cursor: pointer;
+  &--aef{
+    background: #5a219a;
+    .section--branding__grid-item__head{
+      background: #5a219a;
+    }
+  }
+  &--phonics{
+    background: #38a6e5;
+    .section--branding__grid-item__head{
+      background: #38a6e5;
+    }
+  }
+  &--chelsea{
+    background: #dea142;
+    .section--branding__grid-item__head{
+      background: #dea142;
+    }
+  }
+  &--528{
+    background: #887939;
+    .section--branding__grid-item__head{
+      background: #887939;
+    }
+  }
+  &--discover{
+    background: #e37d0d;
+    .section--branding__grid-item__head{
+      background: #e37d0d;
+    }
+  }
+  &--eup{
+    background: #fec000;
+    .section--branding__grid-item__head{
+      background: #fec000;
+    }
+  }
+  &--lunchbox{
+    background: #ef4447;
+    .section--branding__grid-item__head{
+      background: #ef4447;
+    }
+  }
+  &--q{
+    background: #67bb17;
+    .section--branding__grid-item__head{
+      background: #67bb17;
+    }
+  }
+}
+
+.section--branding__grid-item__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  width: 100%;
+  opacity: 0.7;
+  
+  transition: opacity 0.35s, transform 0.35s;
+  transform: scale(1.12);  
+}
+
+.section--branding__grid-item__text {
+  color: #fff;
+  // text-transform: uppercase;
+  font-size: 1.25em;
+}
+
+
+
+.section--branding__grid-item__text,
+.section--branding__grid-item__a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.section--branding__grid-item__a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  // opacity: 0;
+  &:before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 50%;
+    background-color: rgba(185, 0, 0, 1);
+    background-image: url('../img/svg/arrow-right.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.35s;
+    transform: translate(-30%,0%);
+    opacity: 0;
+  }
+}
+
+.section--branding__grid-item__head {
+  font-weight: 300;
+  
+  padding: 20px;
+  // background: #FFF;
+  opacity: 0;
+  color:#fff;
+  
+  transform: translate(0, -100%);
+  transition: all 0.35s;
+}
+
+
+.section--branding__grid-item__head,
+.section--branding__grid-item__p {
+  margin: 0;
+}
+
+.section--branding__grid-item__p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+  
+  opacity: 0;
+  transition: opacity 0.35s, transform 0.35s;
+  
+  margin: 0 auto;
+  max-width: 200px;
+  transform: scale(1.5);
+}
+
+
+
+.section--branding__grid-item:hover .section--branding__grid-item__head {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+
+.section--branding__grid-item:hover .section--branding__grid-item__p {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.section--branding__grid-item:hover .section--branding__grid-item__img {
+  opacity: 1;
+  transform: scale(1);
+}
+.section--branding__grid-item:hover  .section--branding__grid-item__a:before{
+    transform: translate(0,0%);
+    opacity: 1;
+}
