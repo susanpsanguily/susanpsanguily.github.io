@@ -2,18 +2,4 @@
   width: 25%;
   max-width: 220px;
   min-width: 120px;
-  &__circle{
-    animation: rotate360 12s infinite linear;
-    transform-origin: 50%;
-    @at-root{
-      @keyframes rotate360 {
-        from {
-          transform: rotate(0deg);
-        }
-        to {
-          transform: rotate(360deg);
-        }
-      }
-    }
-  }
 }

@@ -124,28 +124,7 @@ body {
   width: 25%;
   max-width: 220px;
   min-width: 120px; }
-  .site-logo-svg__circle {
-    -webkit-animation: rotate360 12s infinite linear;
-            animation: rotate360 12s infinite linear;
-    -webkit-transform-origin: 50%;
-        -ms-transform-origin: 50%;
-            transform-origin: 50%; }
-@-webkit-keyframes rotate360 {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); }
 
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg); } }
-@keyframes rotate360 {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); }
-
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg); } }
 .content-viewer {
   position: absolute;
   z-index: 1;
