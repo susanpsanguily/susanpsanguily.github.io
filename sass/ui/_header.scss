@@ -1,0 +1,59 @@
+.site-header{
+  padding-top: $pad;
+  padding-bottom: $pad;
+  background: #FFF;
+  .site-logo-svg{
+    display: block;
+  }
+  .container{
+    position: relative;
+  }
+  &__nav{
+    text-transform: uppercase;
+    width: calc(75% - 80px);
+    bottom: calc(50% - 1.5em);
+    @media (max-width: 900px){
+      bottom: 0;
+    }
+    right: $pad;
+    @media (max-width: 600px){
+      right: 20px;
+    }
+    
+    position: absolute;
+    @include clearfix;
+    ul{
+      float: right;
+      @include clearfix;
+   }
+    li{
+      float: left;
+      padding-left: 10px;
+      @media (max-width: 900px){
+        float: none;
+      }
+    }
+    a{
+      display: block;
+      padding: 0.5em;
+      font-size: $default-heading-size;
+      color: rgba($c-text,0.5);
+      cursor: pointer;
+      font-weight: 300;
+      transition: all 0.3s;
+      @media (max-width: 900px){
+        text-align: center;
+        font-size: $default-font-size;
+      }
+      &.active{
+        color: $c-accent-1;
+        pointer-events: none;
+        box-shadow: inset 0 0 0 1px $c-accent-1;
+      }
+      &:hover{
+        background: rgba($c-accent-1,0.25);
+        color: $c-accent-1;
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+$sans: 'Open Sans', sans-serif;
+$serif: 'Merriweather', serif;
+
+$default-font-size: 16px;
+$default-heading-size: 24px;
+$default-headline-size: 32px;
+$large-headline-size: 40px;
+$default-line-height: 1.5;
+$default-font-weight: 400;
+$default-font-weight-hi-res: 300;
+
+@mixin sans{
+  font-family: $sans;
+} 
+
+@mixin serif{
+  font-family: $serif;
+}
+
+@mixin default-font-weight{
+  font-weight: $default-font-weight;
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi){
+    font-weight: $default-font-weight-hi-res;
+  }
+}
+
+body{
+  @include sans;
+  @include default-font-weight;
+  font-size: $default-font-size;
+  line-height: $default-line-height;
+  color: $c-text;
+}
+
+.section__heading{
+  text-transform: uppercase;
+  font-size: $large-headline-size;
+  font-weight: 300;
+  line-height: 1;
+  margin-bottom: 0.5em;
+}
