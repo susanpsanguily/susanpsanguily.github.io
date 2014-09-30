@@ -1,0 +1,11 @@
+.section--intro{
+  height: 100%;
+  background-color: $c-accent-1;
+  padding: 0;
+  .container{
+    height: 100%;
+      background-image: url('../img/intro-dog.jpg');
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  }
+}

@@ -6,3 +6,8 @@ $(".section--branding__grid-item").on('click',function(){
 $(".content-viewer__close").on('click',function(){
   $(".content-viewer").addClass("content-viewer--empty");
 });
+
+
+$(".active").on('click',function () {
+  $('body').scrollTo('.section--branding',{duration:'slow'});
+});

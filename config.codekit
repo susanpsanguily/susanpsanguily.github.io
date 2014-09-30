@@ -108,6 +108,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/chrome\/noise-texture-white.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15505,
+		"inputAbbreviatedPath": "\/img\/chrome\/noise-texture-white.png",
+		"outputAbbreviatedPath": "\/img\/chrome\/noise-texture-white.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/chrome\/noise-texture.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3340,
+		"inputAbbreviatedPath": "\/img\/chrome\/noise-texture.png",
+		"outputAbbreviatedPath": "\/img\/chrome\/noise-texture.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/intro-dog.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 77189,
+		"inputAbbreviatedPath": "\/img\/intro-dog.jpg",
+		"outputAbbreviatedPath": "\/img\/intro-dog.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/project-demo\/demo-img-01.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -192,6 +225,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/kit\/_art_direction.kit": {
+		"fileType": 2048,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/kit\/_art_direction.kit",
+		"outputAbbreviatedPath": "\/kit\/_art_direction.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/kit\/_branding.kit": {
 		"fileType": 2048,
 		"ignore": 1,
@@ -219,6 +261,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/kit\/_intro.kit": {
+		"fileType": 2048,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/kit\/_intro.kit",
+		"outputAbbreviatedPath": "\/kit\/_intro.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/kit\/_nav.kit": {
 		"fileType": 2048,
 		"ignore": 1,
@@ -234,15 +285,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/kit\/_viewer.kit",
 		"outputAbbreviatedPath": "\/kit\/_viewer.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/kit\/design.kit": {
-		"fileType": 2048,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/kit\/design.kit",
-		"outputAbbreviatedPath": "\/kit\/design.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -395,15 +437,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/sass\/ui\/_logo.scss": {
+	"\/sass\/ui\/_intro.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/ui\/_logo.scss",
-		"outputAbbreviatedPath": "\/sass\/css\/_logo.css",
+		"inputAbbreviatedPath": "\/sass\/ui\/_intro.scss",
+		"outputAbbreviatedPath": "\/sass\/css\/_intro.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -458,6 +500,17 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/scripts\/midnight.jquery.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/scripts\/midnight.jquery.js",
+		"outputAbbreviatedPath": "\/scripts\/min\/midnight.jquery-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/scripts\/min\/sanguily-min.js": {
 		"fileType": 64,

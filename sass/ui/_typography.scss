@@ -2,9 +2,9 @@ $sans: 'Open Sans', sans-serif;
 $serif: 'Merriweather', serif;
 
 $default-font-size: 16px;
-$default-heading-size: 24px;
-$default-headline-size: 32px;
-$large-headline-size: 40px;
+$default-heading-size: 20px;
+$default-headline-size: 24px;
+$large-headline-size: 28px;
 $default-line-height: 1.5;
 $default-font-weight: 400;
 $default-font-weight-hi-res: 300;
@@ -13,9 +13,6 @@ $default-font-weight-hi-res: 300;
   font-family: $sans;
 } 
 
-@mixin serif{
-  font-family: $serif;
-}
 
 @mixin default-font-weight{
   font-weight: $default-font-weight;
@@ -34,8 +31,12 @@ body{
 
 .section__heading{
   text-transform: uppercase;
-  font-size: $large-headline-size;
-  font-weight: 300;
+  font-size: $default-headline-size;
+  font-weight: 700;
   line-height: 1;
   margin-bottom: 0.5em;
+  color: #fff;
+  .weight-300{
+    font-weight: 300;
+  }
 }
