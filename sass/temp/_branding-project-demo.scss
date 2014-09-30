@@ -2,77 +2,58 @@
   display: block;
   width: 100%;
 }
-.shadow-effect img{
+.shadow-effect{
   border-style: solid;
   border-width: 0px 0px 10px;
   border-image: url(../img/project-demo/ellipse-shadow.png) 0 0 40 stretch;
-  
+  margin-bottom: -10px;
 }
-.shadow-effect{
-  position: relative;
-  &:before{
-    position: absolute;
-    display: block;
-    content: "";
-    top: 0;
-    right: 0;
-    bottom: 10px;
-    left: 0;
-    box-shadow: 10px 10px 7px 0 rgba(0,0,0,0.2);
-  }
+.shadow-effect img{
+     box-shadow: 0px 8px 12px 2px rgba(0,0,0,0.2);
+ 
 }
+
 
 .branding-project-demo-container{
   height: 100%;
-  overflow: auto;
-  
-  .branding-project--phonics{
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    &__box{
-      position: relative;
-    }
-    &__box-1{
-      @media (max-width: 750px){
-        width:100%;
-      }
-      width: 50%;
-      flex: 0 1 auto;
-      padding: 20px;
-    }
-    &__box-2{
-      @media (max-width: 750px){
-        width:100%;
-      }
-      padding: 20px;
-      width: 50%;
-      flex: 0 1 auto;
-      display: flex;
-      flex-wrap: wrap;
-      div{
-        flex: 0 1 auto;
-        width: 50%;
-      }
-      &__1{
-        padding: 0 10px 0 0;
-      }
-      &__2{
-        padding: 0 0 0 10px;
-      }
-      &__3{
-        padding: 10px 10px 0 0;
-      }
-      &__4{
-        padding: 10px 0 0 10px;
-      }
-    }
-    &__box-3{
-      float: right;
-    }
-    &__box-4{
-      
-    }
+  max-width: $max-width;
+}
+.branding-project__row{
+  @include clearfix;
+  margin-bottom: 40px;
+}
+.branding-project__box--2x1{
+  width: calc(50% - 20px);
+  float: left;
+  &:nth-child(2){
+    margin-left: 40px;
   }
+}
+
+.branding-project__box__sub-2x2{
+  width: calc(50% - 10px);
+  float: left;
+  &:nth-child(2n){
+    margin-left: 20px;
+  }
+  &:nth-child(n+3){
+    margin-top: 20px;
+  }
+}
+
+.branding-project__box--3x1{
+  width: calc(33.33% - 20px);
+}
+
+.branding-project__box__sub-3x1-overlap{
+  width: 50%;
+  float: left;
+  &:nth-child(n+2){
+    margin-left: -25%;
+  }
+
+}
+
+.branding-project__box-float-right{
+  float: right;
 }

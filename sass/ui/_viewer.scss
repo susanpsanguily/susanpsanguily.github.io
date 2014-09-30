@@ -10,6 +10,11 @@
   padding: $pad $pad 0 $pad;
   opacity: 1;
   transition: opacity 0.35s;
+  overflow: auto;
+  &--branding{
+      background-color: #6dc7bb;
+    background-image: url('../img/chrome/noise-texture.png');
+  }
   .container{
     height: 100%;
   }
@@ -47,13 +52,32 @@
     transition: all 0.5s 0.2s;
   }
   &__controls{
-    height: 40px;
+    // height: 40px;
     &__control{
-      height: 50px;
-      line-height: 50px;
-      width: 50%;
-      float: left;
+      $size: 80px;
+      position: absolute;
+      width: $size;
+      height: $size;
+      line-height: $size;
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.6;
+      background-color: rgba(255,255,255,0.35);
+      transition: opacity 0.35s;
+      top: calc(50% - ( #{$size} / 2 ) );
       text-align: center;
+      cursor: pointer;
+      &:hover{
+        opacity: 1;
+      }
+      &--prev{
+        left: 0;
+        background-image: url(../img/svg/arrow-left.svg);
+      }
+      &--next{
+        right: 0;
+        background-image: url(../img/svg/arrow-right.svg);
+     }
     }
   }
   &--empty{
