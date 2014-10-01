@@ -17,17 +17,30 @@
 .branding-project-demo-container{
   height: 100%;
   max-width: $max-width;
+  padding-left: $pad;
+  padding-right: $pad;
 }
 .branding-project__row{
   @include clearfix;
   margin-bottom: 40px;
+  &:last-child{
+    margin-bottom: 10px;
+  }
 }
 .branding-project__box--2x1{
   width: calc(50% - 20px);
-  float: left;
   &:nth-child(2){
     margin-left: 40px;
   }
+  @media (max-width: 600px){
+    width: 100%;
+    float: none;
+    &:nth-child(2){
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+  float: left;
 }
 
 .branding-project__box__sub-2x2{

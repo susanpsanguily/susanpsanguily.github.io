@@ -1,11 +1,62 @@
 .section--intro{
   height: 100%;
+  @media (max-height: 300px){
+    height: auto;
+    padding-bottom: $pad*2;
+  }
   background-color: $c-accent-1;
   padding: 0;
-  .container{
-    height: 100%;
-      background-image: url('../img/intro-dog.jpg');
+  background-image: url('../img/intro-dog.jpg');
   background-repeat: no-repeat;
   background-position: 100% 100%;
+  background-attachment: fixed;
+  background-size: 50%;
+  .container{
+    height: 100%;
+  }
+  &__content{
+    padding-top: $pad*3;
+    @media (max-height: 300px){
+      padding-top: $pad;
+    }
+    max-width: 50%;
+    @include breakpoint(medium){
+      max-width: 75%;
+    }
+
+    @include breakpoint(tiny){
+      max-width: 100%;
+    }
+
+    .logo-img--large{
+      max-width: 100%;
+    }    
+  }
+  .site-header__nav{
+    margin-top: $pad*3;
+    @include clearfix;
+    ul{
+      display: flex;
+      justify-content: space-between;
+    }
+    li{
+      float: left;
+      padding-right: 10px;
+
+    }
+    a{
+      display: block;
+      padding: 0.5em;
+      font-size: $default-font-size;
+      color: #fff;
+      cursor: pointer;
+      font-weight: 300;
+      transition: all 0.3s;
+
+
+      &:hover{
+        background: rgba(#000,0.25);
+      }
+    }
   }
 }

@@ -14,11 +14,29 @@
 
   <link rel="stylesheet" href="css/screen.css"/>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
 </head>
 
 <body class="home">
+  <div class="full-height">
 
+
+
+
+<div class="section section--intro" data-midnight="intro">
+  <div class="container">
+    <div class="section--intro__content">
+      <img class="logo-img logo-img--large" src="img/intro-logo.png" alt="Susan Pietrobono Sanguily: Creative Director">
+      <nav class="site-header__nav">
+  <ul>
+    <li><a class="active">Selected Work</a></li>
+    <li><a>Résumé</a></li>
+    <li><a>LinkedIn</a></li>
+  </ul>
+</nav>    </div>
+  </div>
+</div>
   <header class="site-header">
     <div class="container">
       <h1 class="site-logo">
@@ -35,17 +53,11 @@
   </ul>
 </nav>    </div>
   </header>
-
-  <div class="full-height">
-
-<div class="section section--intro" data-midnight="intro">
-  <div class="container">
-  </div>
-</div>
+  <div class="site-header-spacer"></div>
 
 <div class="section section--branding" data-midnight="branding">
   <div class="container">  
-  <h2 class="section__heading">Branding <span class="weight-300">&</span> Packaging</h2>
+  <h2 class="section__heading">Creative Direction <span class="weight-300">&</span> Branding</h2>
 
   <div class="section--branding__grid">
 
@@ -245,7 +257,6 @@
 
 
 <div class="content-viewer content-viewer--empty content-viewer--branding">
-  <div class="container">
     <header class="content-viewer__header">
       <h1 class="content-viewer__heading">Oxford Phonics World</h1>
       <div class="content-viewer__close"></div>
@@ -323,21 +334,12 @@
       <div class="content-viewer__controls__control content-viewer__controls__control--prev"></div>
       <div class="content-viewer__controls__control content-viewer__controls__control--next"></div>
     </nav>
-  </div>
 </div><!-- /content-viewer -->
 
 </div>
 <footer class="scripts-footer">
-  <script type="text/javascript" src="scripts/midnight.jquery.js"></script>
   <script type="text/javascript" src="scripts/min/scrollTo-min.js"></script>
   <script type="text/javascript" src="scripts/min/sanguily-min.js"></script>
-<script>
-  // Start midnight
-  $(document).ready(function(){
-    // Change this to the correct selector for your nav.
-    $('.site-header').midnight();
-  });
-</script>
 </footer>
 </body>
 </html>

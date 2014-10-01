@@ -9,5 +9,27 @@ $(".content-viewer__close").on('click',function(){
 
 
 $(".active").on('click',function () {
-  $('body').scrollTo('.section--branding',{duration:'slow'});
+  $('.full-height').scrollTo('.section--branding',{duration:'slow'});
 });
+
+
+var offset = $( ".section--intro" ).height();
+$( window ).resize(function() {
+  offset = $( ".section--intro" ).height();
+});
+
+var sticky = document.getElementById("site-header");
+
+$('.full-height').scroll(function() {
+    
+    if ( $('.full-height').scrollTop() > offset){
+        $('.site-header').addClass('fixed');
+        $('.site-header-spacer').addClass('visible');
+    } else {
+         $('.site-header').removeClass('fixed');
+        $('.site-header-spacer').removeClass('visible');
+    }
+    
+
+});
+

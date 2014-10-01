@@ -141,6 +141,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/intro-logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/img\/intro-logo.png",
+		"outputAbbreviatedPath": "\/img\/intro-logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/project-demo\/demo-img-01.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -501,12 +512,12 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/scripts\/midnight.jquery.js": {
+	"\/scripts\/min\/jquery.autofix_anything.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/scripts\/midnight.jquery.js",
-		"outputAbbreviatedPath": "\/scripts\/min\/midnight.jquery-min.js",
+		"inputAbbreviatedPath": "\/scripts\/min\/jquery.autofix_anything.js",
+		"outputAbbreviatedPath": "\/scripts\/min\/min\/jquery.autofix_anything-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -518,6 +529,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/scripts\/min\/sanguily-min.js",
 		"outputAbbreviatedPath": "\/scripts\/min\/min\/sanguily-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/scripts\/min\/scrollTo-min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/scripts\/min\/scrollTo-min.js",
+		"outputAbbreviatedPath": "\/scripts\/min\/min\/scrollTo-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
