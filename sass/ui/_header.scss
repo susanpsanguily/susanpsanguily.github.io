@@ -2,31 +2,19 @@
   width: 100%;
   z-index: 2;
   transition: opacity 0.5s;
-  opacity: 0;
+  background: $c-accent-1;
+  position: fixed;
+  top: 0;
+  height: 140px;
   .container{
     @include clearfix;
     position: relative;
     padding-top: $pad;
     padding-bottom: $pad;
-    height: 140px;
   }
-  .site-logo{
-    float: left;
-    font-size: $default-headline-size;
-    text-transform: uppercase;
-    color: #fff;
-    line-height: 1;
-    &-susan{
-      display: block;
-      font-weight: 300;
-    }
-    &-title{
-      display: block;
-      font-weight: 700;
-      margin-top: 0.2em;
-    }
+  &__logo-img{
+    height:100px;
   }
-
   .site-header__nav{
     width: calc(75% - 80px);
     bottom: $pad;
@@ -65,26 +53,5 @@
         background: rgba(#000,0.25);
       }
     }
-  }
-}
-.no-touch{
-  .site-header{
-    &.fixed{
-    background:$c-accent-1;
-    position: fixed;
-    top: 0px;
-    opacity: 1;
-    }
-    &-spacer{
-      height: 0;
-      &.visible{
-        height: 140px;
-      }
-    }
-  }
-}
-.touch{
-  .site-header{
-    display: none;
   }
 }
