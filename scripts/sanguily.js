@@ -21,16 +21,33 @@ $("body").on('click','.content-viewer__close',function(){
 });
 
 //on choosing a portfolio page
-$(".section--branding__grid-item__a").on('click',function(event){
+$("body").on('click','.section--branding__grid-item__a',function(event){
   var a_href = $(this).attr('href');
   historyIt(a_href);
   event.preventDefault();
   ajaxIt(a_href);
-
   //get page title and set as document title
-  var docTitle = "Susan Pietrobono Sunguily: "+ $(".content-viewer__heading").html();
-  document.title = docTitle;
+  setTimeout(function(){
+    var docTitle = "Susan Pietrobono Sunguily: "+ $(".content-viewer__heading").html();
+    document.title = docTitle;
+  }, 200);
+
 });
+
+//on clicking next or back
+$("body").on('click','.content-viewer__controls__control--active',function(event){
+  var a_href = $(this).attr('href');
+  historyIt(a_href);
+  event.preventDefault();
+  ajaxIt(a_href);
+  //get page title and set as document title
+  setTimeout(function(){
+    var docTitle = "Susan Pietrobono Sunguily: "+ $(".content-viewer__heading").html();
+    document.title = docTitle;
+  }, 200);
+
+});
+
 
 
 window.addEventListener('popstate', function(e) {
