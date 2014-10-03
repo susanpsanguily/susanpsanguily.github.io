@@ -3,7 +3,6 @@
 
 function ajaxIt(link) {
   $( ".content-viewer" ).load( link+" .ajax-me").waitForImages(function() {
-    alert("stand to");
     $( ".content-viewer" ).removeClass("content-viewer--empty");
   });
 }
