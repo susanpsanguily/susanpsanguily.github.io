@@ -3,7 +3,10 @@
 
 function ajaxIt(link) {
   $( ".content-viewer" ).load( link+" .ajax-me").waitForImages(function() {
-    $( ".content-viewer" ).removeClass("content-viewer--empty");
+    
+    setTimeout(function(){
+      $( ".content-viewer" ).removeClass("content-viewer--empty");
+    }, 200);
   });
 }
 
