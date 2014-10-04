@@ -18,19 +18,21 @@ html{
 }
 
 body{
-padding-top: 140px;
+
+
 }
 .full-height{
   overflow: auto;
-  min-height: calc(100% - 140px);
+  @include ios-scroll;
+  height: calc(100% - #{$header});
+  @include phone{
+    height: calc(100% - #{$header-mobile});
+  }
 }
 .container{
   max-width: $max-width;
   margin: 0 auto;
-  padding: 0 $pad*2;
-  @media (max-width: 600px){
-    padding: 0 $pad;
-  }
+  padding: 0 $pad;
 }
 .section:not(.section--intro) .container{
   padding-top: $pad*3;

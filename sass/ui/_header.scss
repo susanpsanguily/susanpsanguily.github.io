@@ -3,26 +3,37 @@
   z-index: 2;
   transition: opacity 0.5s;
   background: $c-accent-1;
-  position: fixed;
-  top: 0;
-  height: 140px;
+  // position: absolute;
+  // top: 0;
+  height: $header;
+  @include phone{
+    height: $header-mobile;
+  }
   .container{
     @include clearfix;
     position: relative;
     padding-top: $pad;
     padding-bottom: $pad;
+    @include phone{
+      padding-top: $pad /2;
+      padding-bottom: $pad /2;
+    }
   }
   &__logo-img{
     height:100px;
+    @include phone{
+      height: 60px;
+    }
   }
   .site-header__nav{
     width: calc(75% - 80px);
     bottom: $pad;
-    right: $pad*2;
-    @media (max-width: 600px){
-      right: $pad;
+    right: $pad;
+    @include phone{
+    bottom: $pad /2;
+    right: $pad /2;
     }
-    
+
     position: absolute;
     @include clearfix;
     ul{
@@ -32,9 +43,6 @@
     li{
       float: left;
       padding-left: 10px;
-      @media (max-width: 900px){
-        float: none;
-      }
     }
     a{
       display: block;
@@ -44,9 +52,9 @@
       cursor: pointer;
       font-weight: 300;
       transition: all 0.3s;
-      @media (max-width: 900px){
+      @include phone{
         text-align: center;
-        font-size: $default-font-size;
+        font-size: $default-font-size * 0.8;
       }
 
       &:hover{
