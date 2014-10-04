@@ -3,7 +3,7 @@
 
 function ajaxIt(link) {
   $( ".content-viewer" ).load( link+" .ajax-me");
-  if (link === "/index.html" || link === "/" || link === "/suesanguily/") {
+  if (link === "/index.html" || link === "/" || link === "/suesanguily/" || link === "/suesanguily/index.html") {
     $(".content-viewer").addClass("content-viewer--empty");
   }
   else{
