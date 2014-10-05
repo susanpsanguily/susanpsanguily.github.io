@@ -1,0 +1,186 @@
+.cv{
+
+
+  $cv-breakpoint: 700px;
+
+  //mixins for specific page
+  @mixin cv-break{
+    @media (min-width: $cv-breakpoint){
+      @content;
+    }
+  }
+  @mixin cv-small{
+    @media (max-width: $cv-breakpoint){
+      @content;
+    }
+  }
+  @mixin cv-left{
+    @include cv-break{
+      float: left;
+      width: 180px;
+    }
+  }
+  @mixin cv-right{
+    @include cv-break{
+      float: right;
+      width: calc(100% - 180px);
+    }
+  }
+
+  font-size: 15px;
+  line-height: 1.8;
+  padding-top: $pad;
+  padding-bottom: $pad;
+  @include cv-break{
+    padding-top: $pad*3;
+    padding-bottom: $pad*3;
+  }
+  //layout - structure
+  &__header{
+    @include clearfix;
+  }
+
+  .vcard{
+    @include cv-right;
+    .tel{
+      margin-top: 0.5em;
+    }
+    .email{
+      line-height: 1.2;
+    }
+  }
+
+  &__section,
+  &__super-section{
+    @include clearfix;
+  }
+
+  &__heading{
+    @include cv-left;
+  }
+  &__p,
+  &__ul,
+  &__role-heading,
+  &__role-specifiers,
+  &__role-overview,
+  &__role-points{
+    @include cv-right;    
+  }
+  &__section--education,
+  &__section--awards{
+    @include cv-right;    
+  }
+
+  //typography
+  &__title{
+    color: $c-accent-1;
+    text-transform: uppercase;
+    font-size: $default-headline-size;
+    font-weight: 300;
+    @include cv-small{
+      line-height: 1.2;
+      margin-bottom: 0.5em;
+    }
+  }
+  &__heading{
+    color: $c-accent-1;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.2;  
+    @include cv-break{
+      font-size: 0.85em;
+      padding-top: 0.5em;
+      padding-right: 4em;
+      text-align: right;
+    }
+    @include cv-small{
+      margin-bottom: 0.2em;
+    }
+  }
+  &__floating-bullet{
+    font-weight: 700;
+    color: rgba($c-text,0.6);
+    margin-right: 0.2em;
+    margin-left: 0.2em;
+  }
+  &__role-heading{
+    text-transform: uppercase;
+    font-weight: 700;
+    @include cv-break{
+      font-size: 0.85em;
+      padding-top: 0.5em;
+      line-height: 1.2;  
+    }
+    @include cv-small{
+      line-height: 1.2;  
+    }
+  }
+  &__role-specifiers{
+    font-weight: 300;  
+    @include cv-break{
+      font-size: 0.85em;
+    }
+  }
+  &__role-points{
+    padding-left: 20px;
+    @include cv-break{
+      padding-left: 0;
+    }
+    li{
+      position: relative;
+      margin-bottom: 0.4em;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      &::before{
+        position: absolute;
+        display: block;
+        content: "";
+        left: -1.2em;
+        top: 10px;
+        height: 6px;
+        width: 6px;
+        border-radius: 50%;
+        background: lighten($c-text,20);
+      }
+    }
+  }
+  &__super-section--other{
+    color: darken($c-text,20);
+  }
+  &__heading--inline{
+    color: $c-accent-1;
+    display: inline;
+    font-weight: 700;
+  }
+
+  //spacing
+  &__header{
+    padding-bottom: 1.5em;
+  }
+  &__section{
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
+  &__role-specifiers{
+    margin-bottom: 1em;
+  }
+  &__role-overview ~ .cv__role-points{
+    margin-top: 0.75em;
+    @include cv-break{
+      margin-top: 1.5em;
+    }
+  }
+   &__super-section--other{
+     .cv__section{
+       padding-bottom: 0;
+     }
+   }
+
+  //horizontal rules
+  &__header,
+  &__super-section--about,
+  &__super-section--experience{
+    border-bottom: 1px solid rgba($c-text,0.2);
+  }
+}

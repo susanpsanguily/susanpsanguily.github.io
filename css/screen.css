@@ -697,3 +697,127 @@ html {
   left: 0;
   width: 100%;
   height: 100%; }
+
+.cv {
+  font-size: 15px;
+  line-height: 1.8;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  @media (min-width: 700px) {
+    .cv {
+      padding-top: 60px;
+      padding-bottom: 60px; } }
+  .cv__header:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media (min-width: 700px) {
+    .cv .vcard {
+      float: right;
+      width: calc(100% - 180px); } }
+  .cv .vcard .tel {
+    margin-top: 0.5em; }
+  .cv .vcard .email {
+    line-height: 1.2; }
+  .cv__section:after, .cv__super-section:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media (min-width: 700px) {
+    .cv__heading {
+      float: left;
+      width: 180px; } }
+  @media (min-width: 700px) {
+    .cv__p, .cv__ul, .cv__role-heading, .cv__role-specifiers, .cv__role-overview, .cv__role-points {
+      float: right;
+      width: calc(100% - 180px); } }
+  @media (min-width: 700px) {
+    .cv__section--education, .cv__section--awards {
+      float: right;
+      width: calc(100% - 180px); } }
+  .cv__title {
+    color: #ff9934;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 300; }
+    @media (max-width: 700px) {
+      .cv__title {
+        line-height: 1.2;
+        margin-bottom: 0.5em; } }
+  .cv__heading {
+    color: #ff9934;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.2; }
+    @media (min-width: 700px) {
+      .cv__heading {
+        font-size: 0.85em;
+        padding-top: 0.5em;
+        padding-right: 4em;
+        text-align: right; } }
+    @media (max-width: 700px) {
+      .cv__heading {
+        margin-bottom: 0.2em; } }
+  .cv__floating-bullet {
+    font-weight: 700;
+    color: rgba(102, 102, 102, 0.6);
+    margin-right: 0.2em;
+    margin-left: 0.2em; }
+  .cv__role-heading {
+    text-transform: uppercase;
+    font-weight: 700; }
+    @media (min-width: 700px) {
+      .cv__role-heading {
+        font-size: 0.85em;
+        padding-top: 0.5em;
+        line-height: 1.2; } }
+    @media (max-width: 700px) {
+      .cv__role-heading {
+        line-height: 1.2; } }
+  .cv__role-specifiers {
+    font-weight: 300; }
+    @media (min-width: 700px) {
+      .cv__role-specifiers {
+        font-size: 0.85em; } }
+  .cv__role-points {
+    padding-left: 20px; }
+    @media (min-width: 700px) {
+      .cv__role-points {
+        padding-left: 0; } }
+    .cv__role-points li {
+      position: relative;
+      margin-bottom: 0.4em; }
+      .cv__role-points li:last-child {
+        margin-bottom: 0; }
+      .cv__role-points li::before {
+        position: absolute;
+        display: block;
+        content: "";
+        left: -1.2em;
+        top: 10px;
+        height: 6px;
+        width: 6px;
+        border-radius: 50%;
+        background: #999999; }
+  .cv__super-section--other {
+    color: #333333; }
+  .cv__heading--inline {
+    color: #ff9934;
+    display: inline;
+    font-weight: 700; }
+  .cv__header {
+    padding-bottom: 1.5em; }
+  .cv__section {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em; }
+  .cv__role-specifiers {
+    margin-bottom: 1em; }
+  .cv__role-overview ~ .cv__role-points {
+    margin-top: 0.75em; }
+    @media (min-width: 700px) {
+      .cv__role-overview ~ .cv__role-points {
+        margin-top: 1.5em; } }
+  .cv__super-section--other .cv__section {
+    padding-bottom: 0; }
+  .cv__header, .cv__super-section--about, .cv__super-section--experience {
+    border-bottom: 1px solid rgba(102, 102, 102, 0.2); }
