@@ -32,46 +32,46 @@ $branding-grid-gap: 10px;
   }
   text-align: center;
   cursor: pointer;
-  &--aef{
-    .section--branding__grid-item__text::before{
-      background-color: #5a219a;
-    }
-  }
-  &--phonics{
-    .section--branding__grid-item__text::before{
-      background-color: #38a6e5;
-    }
-  }
-  &--chelsea{
-    .section--branding__grid-item__text::before{
-      background-color: #dea142;
-    }
-  }
-  &--528{
-    .section--branding__grid-item__text::before{
-      background-color: #887939;
-    }
-  }
-  &--discover{
-    .section--branding__grid-item__text::before{
-      background-color: #67b650;
-    }
-  }
-  &--eup{
-    .section--branding__grid-item__text::before{
-      background-color: #fec000;
-    }
-  }
-  &--lunchbox{
-    .section--branding__grid-item__text::before{
-      background-color: #ef4447;
-    }
-  }
-  &--q{
-    .section--branding__grid-item__text::before{
-      background-color: #67bb17;
-    }
-  }
+  // &--aef{
+  //   .section--branding__grid-item__text::before{
+  //     background-color: #5a219a;
+  //   }
+  // }
+  // &--phonics{
+  //   .section--branding__grid-item__text::before{
+  //     background-color: #38a6e5;
+  //   }
+  // }
+  // &--chelsea{
+  //   .section--branding__grid-item__text::before{
+  //     background-color: #dea142;
+  //   }
+  // }
+  // &--528{
+  //   .section--branding__grid-item__text::before{
+  //     background-color: #887939;
+  //   }
+  // }
+  // &--discover{
+  //   .section--branding__grid-item__text::before{
+  //     background-color: #67b650;
+  //   }
+  // }
+  // &--eup{
+  //   .section--branding__grid-item__text::before{
+  //     background-color: #fec000;
+  //   }
+  // }
+  // &--lunchbox{
+  //   .section--branding__grid-item__text::before{
+  //     background-color: #ef4447;
+  //   }
+  // }
+  // &--q{
+  //   .section--branding__grid-item__text::before{
+  //     background-color: #67bb17;
+  //   }
+  // }
 }
 
 .section--branding__grid-item__img {
@@ -88,6 +88,7 @@ $branding-grid-gap: 10px;
 }
 
 .section--branding__grid-item__text {
+  font-family: $serif;
   color: #fff;
   // text-transform: uppercase;
   font-weight: 300;
@@ -103,7 +104,8 @@ $branding-grid-gap: 10px;
     top:-50%;
     transform:scale(0);
     transition: all 0.25s;
-    background-image: url('../img/chrome/noise-texture.png');
+    // background-image: url('../img/chrome/noise-texture.png');
+    background-color: #333;
   }
 }
 

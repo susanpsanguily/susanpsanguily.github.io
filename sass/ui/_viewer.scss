@@ -1,4 +1,7 @@
 .content-viewer{
+  $pageHeader: 50px;
+  $line: 1px;
+
   position: absolute;
   z-index: 2;
   top: $header;
@@ -23,14 +26,13 @@
   }
 
   .container{
-    height: 100%;
+    // height: 100%;
   }
   &__header{
-    height: 50px;
-    background: darken($c-accent-1,15);
+    height: $pageHeader;
+    background: #fff;
     z-index: 1;
     width: 100%;
-    display: flex;
     //animations
     transition: all 0.35s;
     opacity: 1;
@@ -38,41 +40,53 @@
     flex: 0 0 auto;
   }
   &__heading{
-    max-width: $max-width;
-    height: 50px;
-    margin: 0 auto;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 50px + ($pad * 2);
-    padding-left: $pad;
-    text-transform: uppercase;
     font-size: $large-headline-size;
+    font-family: $serif;
     @include phone{
       font-size: $default-heading-size;
     }
     font-weight: 300;
-    line-height: 1;
-    color: #FFF;
+    line-height: $pageHeader;
+    color: $c-text;
     transition: color 0.3s;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    float: left;
+    margin-left: .5em;
   }
   &__close{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50px;
-    height: 50px;
-    background-color: rgba(0,0,0,0.3);
-    background-image: url('../img/svg/close.svg');
+    float: left;
+    width: $pageHeader;
+    height: $pageHeader;
+    line-height: $pageHeader;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
     transition: background 0.35s, transform 0.25s 0.2s;
+    position: relative;
+    background-color: $c-bg;
+    &:before,
+    &:after{
+      position: absolute;
+      display: block;
+      content: "";
+      width: $pageHeader * 0.6;
+      height: $line;
+      background: $c-text;
+      top: ($pageHeader / 2) - $line;
+      left: $pageHeader * 0.2;
+      transition: all 0.2s
+    }
+    &:before{
+      transform: rotate(45deg);
+    }
+    &:after{
+      transform: rotate(-45deg);
+    }
     &:hover{
       background-color: rgba(0,0,0,.7);
+      &:before,
+      &:after{
+        background-color: #FFF;
+      }
     }
   }
   &__container{
@@ -89,37 +103,70 @@
     flex: 1 0 auto;
   }
   &__controls{
-    height: 50px;
-    background: rgba(0,0,0,0.1);
-    flex: 0 0 auto;
-    padding: 0 20px;
+    float: right;
     &__control{
       @include no-tap-color;
-      $size: 50px;
-      width: 50%;
+      height: $pageHeader;
+      line-height: $pageHeader;
+      font-size: 0.8rem;
+      font-weight: 300;
+      font-family: $serif;
+      letter-spacing:0.05em;
+      background-color: #fff;
+      display: block;
       float: left;
-      height: $size;
-      line-height: $size;
+      color: $c-text;
+      padding: 0 1em;
       background-repeat: no-repeat;
-      opacity: 0.5;
       transition: opacity 0.35s;
       text-align: center;
       cursor: pointer;
-      &:not( .content-viewer__control):hover{
-        opacity: 1;
+      position: relative;
+      transition: all 0.35s;   
+      &:before,
+      &:after{
+        position: absolute;
+        display: block;
+        content: "";
+        width: $pageHeader * 0.3;
+        height: $line;
+        background: $c-text;
+        transition: all 0.2s        
+      }
+      &:before{
+        bottom: ($pageHeader * 0.4) - $line;
+      }
+      &:after{
+        top: ($pageHeader * 0.4) - $line;
+      }      
+      &:hover{
+      background-color: $c-bg;
       }
       &--prev{
-        background-image: url(../img/svg/arrow-left.svg);
-        background-position: center left;
+        padding-left: $pageHeader / 1.5;
+        &:before{
+          transform: rotate(45deg);
+          left: $pageHeader * 0.2;
+        }
+        &:after{
+          transform: rotate(-45deg);
+          left: $pageHeader * 0.2;
+        }    
       }
       &--next{
-        background-image: url(../img/svg/arrow-right.svg);
-      background-position: center right;
+        padding-right: $pageHeader / 1.5;
+        &:before{
+          transform: rotate(-45deg);
+          right: $pageHeader * 0.2;
+        }
+        &:after{
+          transform: rotate(45deg);
+          right: $pageHeader * 0.2;
+        }    
+
       }
       &--inactive{
-        opacity: 0;
-        cursor: default;
-        pointer-events: none;
+        display: none;
       }
     }
   }
@@ -170,7 +217,7 @@
       opacity: 0;
     }
     .content-viewer__heading{
-      color: rgba(#FFF,0);
+      color: rgba($c-text,0);
     }
   }
   &--slideOut-back,
