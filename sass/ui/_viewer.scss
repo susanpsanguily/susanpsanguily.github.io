@@ -26,7 +26,9 @@
   }
 
   .container{
-    // height: 100%;
+    @include phone{
+      padding: 0;
+    }
   }
   &__header{
     height: $pageHeader;
@@ -44,6 +46,9 @@
     font-family: $serif;
     @include phone{
       font-size: $default-heading-size;
+    }
+    @media ( max-width:  550px ){
+      font-size: 18px;
     }
     font-weight: 300;
     line-height: $pageHeader;
@@ -107,6 +112,7 @@
     &__control{
       @include no-tap-color;
       height: $pageHeader;
+      min-width: $pageHeader;
       line-height: $pageHeader;
       font-size: 0.8rem;
       font-weight: 300;
@@ -122,7 +128,10 @@
       text-align: center;
       cursor: pointer;
       position: relative;
-      transition: all 0.35s;   
+      transition: all 0.35s;
+      @media ( max-width:  550px ){
+        font-size: 0px;
+      }
       &:before,
       &:after{
         position: absolute;
@@ -147,10 +156,16 @@
         &:before{
           transform: rotate(45deg);
           left: $pageHeader * 0.2;
+          @media ( max-width:  550px ){
+            left: $pageHeader * 0.3;
+          }
         }
         &:after{
           transform: rotate(-45deg);
           left: $pageHeader * 0.2;
+          @media ( max-width:  550px ){
+            left: $pageHeader * 0.3;
+          }
         }    
       }
       &--next{
@@ -158,10 +173,16 @@
         &:before{
           transform: rotate(-45deg);
           right: $pageHeader * 0.2;
+          @media ( max-width:  550px ){
+            right: $pageHeader * 0.3;
+          }
         }
         &:after{
           transform: rotate(45deg);
           right: $pageHeader * 0.2;
+          @media ( max-width:  550px ){
+            right: $pageHeader * 0.3;
+          }
         }    
 
       }
