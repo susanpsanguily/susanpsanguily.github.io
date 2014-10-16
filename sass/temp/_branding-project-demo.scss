@@ -65,6 +65,10 @@
   width: calc(33.33% - 20px);
 }
 
+.branding-project__box--3rds{
+  width: calc(33.33% - 27px);
+}
+
 .branding-project__box--35x1{
   width: calc(35% - 20px);
 }
@@ -124,6 +128,17 @@
     margin-top: 20px;
   }
 }
+.branding-project__box__sub-sub-50x2{
+  width: calc(50% - 5px);
+  float: left;
+  &:nth-child(2n){
+    margin-left: 10px;
+  }
+  &:nth-child(n+3){
+    margin-top: 10px;
+  }
+}
+
 .branding-project__box__sub-50x1{
   width: calc(50% - 10px);
   float: left;
@@ -208,4 +223,7 @@
 }
 .extra-margin-top{
   margin-top: 30px;
+}
+.ml40{
+  margin-left: 40px;
 }

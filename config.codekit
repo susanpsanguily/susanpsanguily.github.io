@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "17625",
+"creatorBuild": "17945",
 "files": {
 	"\/american-english-file.html": {
 		"fileType": 8192,
@@ -16,6 +16,15 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/css\/screen.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dictionary.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dictionary.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -51,6 +60,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/branding-thumb-dictionary.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 32932,
+		"inputAbbreviatedPath": "\/img\/branding-thumb-dictionary.jpg",
+		"outputAbbreviatedPath": "\/img\/branding-thumb-dictionary.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/branding-thumb-discover.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -69,6 +89,17 @@
 		"initialSize": 71851,
 		"inputAbbreviatedPath": "\/img\/branding-thumb-eup.jpg",
 		"outputAbbreviatedPath": "\/img\/branding-thumb-eup.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/branding-thumb-inside.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 43832,
+		"inputAbbreviatedPath": "\/img\/branding-thumb-inside.jpg",
+		"outputAbbreviatedPath": "\/img\/branding-thumb-inside.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -113,6 +144,17 @@
 		"initialSize": 39566,
 		"inputAbbreviatedPath": "\/img\/branding-thumb-q.jpg",
 		"outputAbbreviatedPath": "\/img\/branding-thumb-q.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/branding-thumb-smart.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 49475,
+		"inputAbbreviatedPath": "\/img\/branding-thumb-smart.jpg",
+		"outputAbbreviatedPath": "\/img\/branding-thumb-smart.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -304,6 +346,50 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/project-demo\/branding-dic-img-01.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 66810,
+		"inputAbbreviatedPath": "\/img\/project-demo\/branding-dic-img-01.jpg",
+		"outputAbbreviatedPath": "\/img\/project-demo\/branding-dic-img-01.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/project-demo\/branding-dic-img-02.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 71070,
+		"inputAbbreviatedPath": "\/img\/project-demo\/branding-dic-img-02.jpg",
+		"outputAbbreviatedPath": "\/img\/project-demo\/branding-dic-img-02.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/project-demo\/branding-dic-img-03.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 66810,
+		"inputAbbreviatedPath": "\/img\/project-demo\/branding-dic-img-03.jpg",
+		"outputAbbreviatedPath": "\/img\/project-demo\/branding-dic-img-03.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/project-demo\/branding-dic-img-04.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15230,
+		"inputAbbreviatedPath": "\/img\/project-demo\/branding-dic-img-04.png",
+		"outputAbbreviatedPath": "\/img\/project-demo\/branding-dic-img-04.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/project-demo\/branding-eup-img-01.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -377,6 +463,61 @@
 		"initialSize": 50359,
 		"inputAbbreviatedPath": "\/img\/project-demo\/branding-eup-img-07.jpg",
 		"outputAbbreviatedPath": "\/img\/project-demo\/branding-eup-img-07.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/project-demo\/branding-ir-img-01.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 95866,
+		"inputAbbreviatedPath": "\/img\/project-demo\/branding-ir-img-01.jpg",
+		"outputAbbreviatedPath": "\/img\/project-demo\/branding-ir-img-01.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/project-demo\/branding-ir-img-02.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 30882,
+		"inputAbbreviatedPath": "\/img\/project-demo\/branding-ir-img-02.jpg",
+		"outputAbbreviatedPath": "\/img\/project-demo\/branding-ir-img-02.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/project-demo\/branding-ir-img-03.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 30757,
+		"inputAbbreviatedPath": "\/img\/project-demo\/branding-ir-img-03.jpg",
+		"outputAbbreviatedPath": "\/img\/project-demo\/branding-ir-img-03.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/project-demo\/branding-ir-img-04.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 32076,
+		"inputAbbreviatedPath": "\/img\/project-demo\/branding-ir-img-04.jpg",
+		"outputAbbreviatedPath": "\/img\/project-demo\/branding-ir-img-04.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/project-demo\/branding-ir-img-05.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 11655,
+		"inputAbbreviatedPath": "\/img\/project-demo\/branding-ir-img-05.jpg",
+		"outputAbbreviatedPath": "\/img\/project-demo\/branding-ir-img-05.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -777,6 +918,94 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/project-demo\/branding-sc-img-01.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 96125,
+		"inputAbbreviatedPath": "\/img\/project-demo\/branding-sc-img-01.jpg",
+		"outputAbbreviatedPath": "\/img\/project-demo\/branding-sc-img-01.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/project-demo\/branding-sc-img-02.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 41411,
+		"inputAbbreviatedPath": "\/img\/project-demo\/branding-sc-img-02.jpg",
+		"outputAbbreviatedPath": "\/img\/project-demo\/branding-sc-img-02.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/project-demo\/branding-sc-img-03.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 37323,
+		"inputAbbreviatedPath": "\/img\/project-demo\/branding-sc-img-03.jpg",
+		"outputAbbreviatedPath": "\/img\/project-demo\/branding-sc-img-03.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/project-demo\/branding-sc-img-04.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 37078,
+		"inputAbbreviatedPath": "\/img\/project-demo\/branding-sc-img-04.jpg",
+		"outputAbbreviatedPath": "\/img\/project-demo\/branding-sc-img-04.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/project-demo\/branding-sc-img-05.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 11109,
+		"inputAbbreviatedPath": "\/img\/project-demo\/branding-sc-img-05.jpg",
+		"outputAbbreviatedPath": "\/img\/project-demo\/branding-sc-img-05.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/project-demo\/branding-sc-img-06.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10968,
+		"inputAbbreviatedPath": "\/img\/project-demo\/branding-sc-img-06.jpg",
+		"outputAbbreviatedPath": "\/img\/project-demo\/branding-sc-img-06.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/project-demo\/branding-sc-img-07.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10842,
+		"inputAbbreviatedPath": "\/img\/project-demo\/branding-sc-img-07.jpg",
+		"outputAbbreviatedPath": "\/img\/project-demo\/branding-sc-img-07.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/project-demo\/branding-sc-img-08.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10657,
+		"inputAbbreviatedPath": "\/img\/project-demo\/branding-sc-img-08.jpg",
+		"outputAbbreviatedPath": "\/img\/project-demo\/branding-sc-img-08.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/project-demo\/branding-str-img-01.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -870,6 +1099,15 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/inside-reading.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/inside-reading.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -982,6 +1220,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/kit\/pages\/_temp_page-design-02.kit": {
+		"fileType": 2048,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/kit\/pages\/_temp_page-design-02.kit",
+		"outputAbbreviatedPath": "\/_temp_page-design-02.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/kit\/pages\/american-english-file.kit": {
 		"fileType": 2048,
 		"ignore": 0,
@@ -991,12 +1238,30 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1
 		},
+	"\/kit\/pages\/dictionary.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/kit\/pages\/dictionary.kit",
+		"outputAbbreviatedPath": "\/dictionary.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/kit\/pages\/everybody-up.kit": {
 		"fileType": 2048,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/kit\/pages\/everybody-up.kit",
 		"outputAbbreviatedPath": "\/everybody-up.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/kit\/pages\/inside-reading.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/kit\/pages\/inside-reading.kit",
+		"outputAbbreviatedPath": "\/inside-reading.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -1060,6 +1325,42 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/kit\/resume.kit",
 		"outputAbbreviatedPath": "\/resume.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/network.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/network.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/oxford-discover.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/oxford-discover.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/oxford-phonics-world.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/oxford-phonics-world.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/q-skills-for-success.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/q-skills-for-success.html",
+		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -1313,6 +1614,24 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
+		},
+	"\/smart-choice.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/smart-choice.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/stretch.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/stretch.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		}
 	},
 "hooks": [
@@ -1446,6 +1765,10 @@
 			"flagValue": -1
 			},
 		"non_empty_constructor_needs_parens": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"prefer_english_operator": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -1924,6 +2247,7 @@
 	"stylusAutoOutputPathReplace1": "stylus",
 	"stylusAutoOutputPathReplace2": "css",
 	"stylusAutoOutputPathStyle": 2,
+	"stylusCreateSourceMap": 0,
 	"stylusDebugStyle": 0,
 	"stylusImportCSS": 0,
 	"stylusOutputStyle": 0,
