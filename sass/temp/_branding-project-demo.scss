@@ -61,6 +61,26 @@
   }
 }
 
+.branding-project__box--25x1-to-50x2{
+  @include clearfix;
+  width: calc(25% - 15px);
+  &:nth-child(n+2){
+    margin-left: 20px;
+  }
+  @media (max-width: 600px){
+    width: calc(50% - 20px);
+    &:nth-child(2n){
+      margin-left: 20px;
+    }
+    &:nth-child(n+3){
+      margin-top: 20px;
+    }
+    &:nth-child(3){
+      margin-left: 0;
+    }
+  }
+}
+
 .branding-project__box--33x1{
   width: calc(33.33% - 20px);
 }
@@ -205,6 +225,16 @@
     }
   }
 }
+
+.branding-project__box-float-left-small{
+  float: left;
+}
+
+.branding-project__box--center{
+  max-width: 560px;
+  margin: 0 auto;
+}
+
 .videoWrapper{
   position: relative;
   padding-bottom: 35.5%;

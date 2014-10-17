@@ -83,8 +83,8 @@ $branding-grid-gap: 10px;
   display: block;
   width: 100%;
   
-  transition: opacity 0.35s, transform 0.35s;
-  transform: scale(1.2);  
+  transition: transform 0.5s;
+  transform: scale(1);  
 }
 
 .section--branding__grid-item__text {
@@ -105,7 +105,7 @@ $branding-grid-gap: 10px;
     transform:scale(0);
     transition: all 0.25s;
     // background-image: url('../img/chrome/noise-texture.png');
-    background-color: #333;
+    background-color: rgba(#333,0.5);
   }
 }
 
@@ -177,10 +177,11 @@ $branding-grid-gap: 10px;
 
 .section--branding__grid-item:hover .section--branding__grid-item__img {
   opacity: 1;
-  transform: scale(1);
+  transform: scale(1.4);
 }
 
 
 .section--branding__grid-item:hover  .section--branding__grid-item__text:before{
   transform: scale(1);
+  background-color: rgba(#333,1);
 }
