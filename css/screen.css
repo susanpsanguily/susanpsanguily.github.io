@@ -97,6 +97,16 @@ html {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px; }
+  .container.hidden {
+    opacity: 0;
+    -webkit-transform: translate(0, 100px);
+        -ms-transform: translate(0, 100px);
+            transform: translate(0, 100px); }
+  .container.hideOut {
+    -webkit-transform: translate(0, 50px);
+        -ms-transform: translate(0, 50px);
+            transform: translate(0, 50px);
+    opacity: 0; }
 
 .section:not(.section--intro) .container {
   padding-top: 60px;
@@ -831,17 +841,10 @@ html {
   margin-left: 40px; }
 
 .cv {
-  -webkit-transition: opacity 2s 0.2s, -webkit-transform 0.5s 0.2s;
-          transition: opacity 2s 0.2s, transform 0.5s 0.2s;
   font-size: 15px;
   line-height: 1.5;
   padding-top: 20px;
   padding-bottom: 20px; }
-  .cv.hidden {
-    opacity: 0;
-    -webkit-transform: translate(0, 100px);
-        -ms-transform: translate(0, 100px);
-            transform: translate(0, 100px); }
   @media (min-width: 700px) {
     .cv {
       padding-top: 30px;
@@ -1005,8 +1008,6 @@ html {
     border-bottom: 1px solid rgba(102, 102, 102, 0.2); }
 
 .about-me {
-  -webkit-transition: opacity 2s 0.2s, -webkit-transform 0.5s 0.2s;
-          transition: opacity 2s 0.2s, transform 0.5s 0.2s;
   font-family: "Aleo", "Helvetica Neue", "Roboto", Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -1016,11 +1017,6 @@ html {
     content: "";
     display: table;
     clear: both; }
-  .about-me.hidden {
-    opacity: 0;
-    -webkit-transform: translate(0, 100px);
-        -ms-transform: translate(0, 100px);
-            transform: translate(0, 100px); }
   @media (min-width: 670px) {
     .about-me {
       padding-top: 30px;

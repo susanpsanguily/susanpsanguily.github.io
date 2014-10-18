@@ -18,6 +18,16 @@ html{
   max-width: $max-width;
   margin: 0 auto;
   padding: 0 $pad;
+
+  &.hidden{
+    opacity: 0;
+    transform: translate(0, 100px);
+  }
+  &.hideOut{
+    transform: translate(0, 50px);
+    opacity: 0;
+
+  }
 }
 .section:not(.section--intro) .container{
   padding-top: $pad*3;

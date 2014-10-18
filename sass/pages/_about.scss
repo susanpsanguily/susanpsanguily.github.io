@@ -20,11 +20,7 @@
     }
   }
   @include clearfix;
-  transition: opacity 2s 0.2s, transform 0.5s 0.2s;
-  &.hidden{
-    opacity: 0;
-    transform: translate(0, 100px);
-  }
+
   font-family: $serif;
   font-size: 16px;
   line-height: 1.5;
