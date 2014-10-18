@@ -26,7 +26,11 @@
       width: calc(100% - 180px);
     }
   }
-
+  transition: opacity 2s 0.2s, transform 0.5s 0.2s;
+  &.hidden{
+    opacity: 0;
+    transform: translate(0, 100px);
+  }
   font-size: 15px;
   line-height: 1.5;
   padding-top: $pad;
@@ -41,13 +45,66 @@
   }
 
   .vcard{
-    @include cv-right;
-    .tel{
-      margin-top: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    @include cv-small{
+      flex-wrap: wrap;
+      justify-content: center;
     }
-    .email{
-      line-height: 1.2;
+    @media (max-width: 520px){
+      justify-content: flex-start;
     }
+    .contact-method{
+      padding-left: 36px;
+      padding-right: 0px;
+      min-height: 40px;
+      position: relative;
+      line-height: 40px;
+      font-size: 14px;
+      @include cv-small{
+        margin: 0 15px;
+      }
+
+      &:before{
+        font-family: 'icomoon';
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;      
+        line-height: 30px;
+        text-align: center;
+        color: #fff;
+        position: absolute;
+        display: block;
+        content: "";
+        top: calc(50% - 15px);
+        left: 0;
+        width: 30px;
+        height: 30px;
+        background: #FFF;
+        border-radius: 50%;
+        background-color: #aaa;
+      }
+    }
+    .contact-tel{
+      &:before {
+        content: "\e600";
+      }
+    }
+    .contact-email{
+      &:before {
+        content: "\e601";
+      }
+    }
+    .contact-address{
+      &:before {
+        content: "\e602";
+      }
+    }
+
   }
 
   &__section,
@@ -73,14 +130,7 @@
 
   //typography
   &__title{
-    color: $c-accent-1;
-    text-transform: uppercase;
-    font-size: $default-headline-size;
-    font-weight: 300;
-    @include cv-small{
-      line-height: 1.2;
-      margin-bottom: 0.5em;
-    }
+    display: none;
   }
   &__heading{
     color: $c-accent-1;

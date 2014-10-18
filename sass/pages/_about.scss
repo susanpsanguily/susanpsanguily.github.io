@@ -1,6 +1,5 @@
 .about-me{
 
-
   $me-breakpoint-1: 670px;
   $me-breakpoint-2: 800px;
 
@@ -20,6 +19,12 @@
       @content;
     }
   }
+  @include clearfix;
+  transition: opacity 2s 0.2s, transform 0.5s 0.2s;
+  &.hidden{
+    opacity: 0;
+    transform: translate(0, 100px);
+  }
   font-family: $serif;
   font-size: 16px;
   line-height: 1.5;
@@ -29,19 +34,27 @@
     padding-top: $pad*1.5;
     padding-bottom: $pad*3;
   }
+  @include me-small{
+    display: flex;
+    flex-direction: column;
+  }
   .big-p{
     font-size: 1.5em;
     font-weight: 300;
-    line-height: 1.4;
-    color: $c-accent-1;
+    line-height: 1;
+    // color: $c-accent-1;
     position: relative;
 
   }
   .line-above{
-    margin: 2em 0 0;
+    margin: .75em 0 0;
+    font-family: $sans;
+    font-size: 15px;
   }
   .space-above{
-    margin: 2em 0 0;
+    margin: 1em 0 0;
+    font-family: $sans;
+    font-size: 15px;
   }
 
   .about-image{
@@ -52,14 +65,17 @@
     }
     @include me-small{
       float: none;
-      max-width: 350px;
-      width: 70%;
-      margin: 0 auto $pad;
+      // max-width: 350px;
+      width: 100%;
+      margin: $pad auto 0;
+      height: 0;
+      overflow: hidden;
+      padding-bottom: 126%;
+      order:2;
     }
     img{
       display: block;
       width: 100%;
-      border-radius:50%;
     }
   }
   .about-text{
@@ -76,8 +92,8 @@
 
   .about-me__contact{
     border-top: 1px solid #ddd;
-    margin: 2em 0 0;
-    padding: 2em 0 0;
+    margin: 1.5em 0 0;
+    padding: 1.5em 0 0;
     float: right;
     width: calc(100% - 340px);
     @include me-mid{

@@ -42,11 +42,6 @@ $("body").on('click','.section--branding__grid-item__a',function(event){
   else{
     ajaxIt(a_href);
   }
-  //get page title and set as document title
-  setTimeout(function(){
-    var docTitle = "Susan Pietrobono Sunguily: "+ $(".content-viewer__heading").html();
-    document.title = docTitle;
-  }, 200);
 
 });
 
@@ -72,16 +67,19 @@ $("body").on('click','.content-viewer__controls__control--active',function(event
 
   }, 350);
 
-  //get page title and set as document title
-  setTimeout(function(){
-    var docTitle = "Susan Pietrobono Sunguily: "+ $(".content-viewer__heading").html();
-    document.title = docTitle;
-  }, 200);
 
 });
 
 
-
+$(".about-me").addClass("hidden");
+setTimeout(function(){
+  $(".about-me").removeClass("hidden");
+}, 100);
+$(".cv").addClass("hidden");
+setTimeout(function(){
+  $(".cv").removeClass("hidden");
+}, 100);
+    
 window.addEventListener('popstate', function(e) {
   ajaxIt(location.pathname);
 });
