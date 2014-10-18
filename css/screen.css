@@ -873,6 +873,13 @@ html {
         -webkit-justify-content: flex-start;
             -ms-flex-pack: start;
                 justify-content: flex-start; } }
+    .cv .vcard a {
+      border-bottom: 1px solid #ddd;
+      -webkit-transition: all 0.25s;
+              transition: all 0.25s; }
+      .cv .vcard a:hover {
+        color: #ff9934;
+        border-bottom: 1px solid rgba(255, 153, 52, 0.5); }
     .cv .vcard .contact-method {
       padding-left: 36px;
       padding-right: 0px;

@@ -50,6 +50,15 @@
     @media (max-width: 520px){
       justify-content: flex-start;
     }
+    a{
+      border-bottom: 1px solid #ddd;
+      transition: all 0.25s;
+      &:hover{
+        color: $c-accent-1;
+        border-bottom: 1px solid rgba($c-accent-1,0.5);
+      }
+    }    
+
     .contact-method{
       padding-left: 36px;
       padding-right: 0px;
