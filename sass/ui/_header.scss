@@ -53,14 +53,18 @@
       margin-left: 1.5em;
       margin-right: 1.5em;
       @include phone{
-        margin-left: 0.75em;
-        margin-right: 0.75em;
+        padding-left: 1em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
         &:first-child{
           margin-left: 0;
         }
         &:last-child{
           margin-right: 0;
         }
+      }
+      @media (max-width: 400px){
+        padding-left: 0;
       }
     }
     a{
@@ -70,10 +74,16 @@
       font-weight: 300;
       transition: all 0.3s;
       position: relative;
+      @media (max-width: 400px){
+        color: $c-accent-1;
+      }
       &:before{
         position: absolute;
         display: block;
         content: "";
+        @media (max-width: 400px){
+          content: none;
+        }
         width: 0.7em;
         height: 0.7em;
         // border: 2px solid $c-accent-1;

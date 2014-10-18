@@ -1,0 +1,165 @@
+.about-me{
+
+
+  $me-breakpoint-1: 670px;
+  $me-breakpoint-2: 800px;
+
+  //mixins for specific page
+  @mixin me-break{
+    @media (min-width: $me-breakpoint-1){
+      @content;
+    }
+  }
+  @mixin me-small{
+    @media (max-width: $me-breakpoint-1){
+      @content;
+    }
+  }
+  @mixin me-mid{
+    @media (max-width: $me-breakpoint-2){
+      @content;
+    }
+  }
+  font-family: $serif;
+  font-size: 16px;
+  line-height: 1.5;
+  padding-top: $pad;
+  padding-bottom: $pad;
+  @include me-break{
+    padding-top: $pad*1.5;
+    padding-bottom: $pad*3;
+  }
+  .big-p{
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.4;
+    color: $c-accent-1;
+    position: relative;
+
+  }
+  .line-above{
+    margin: 2em 0 0;
+  }
+  .space-above{
+    margin: 2em 0 0;
+  }
+
+  .about-image{
+    float: left;
+    width: 300px;
+    @include me-mid{
+      width: 200px;
+    }
+    @include me-small{
+      float: none;
+      max-width: 350px;
+      width: 70%;
+      margin: 0 auto $pad;
+    }
+    img{
+      display: block;
+      width: 100%;
+      border-radius:50%;
+    }
+  }
+  .about-text{
+    float: right;
+    width: calc(100% - 340px);
+    @include me-mid{
+      width: calc(100% - 240px);
+    }
+    @include me-small{
+      width: 100%;
+      float: none;
+    }
+  }
+
+  .about-me__contact{
+    border-top: 1px solid #ddd;
+    margin: 2em 0 0;
+    padding: 2em 0 0;
+    float: right;
+    width: calc(100% - 340px);
+    @include me-mid{
+      width: calc(100% - 240px);
+    }
+    @include me-small{
+      width: 100%;
+      float: none;
+    }
+    a{
+      border-bottom: 1px solid #ddd;
+      transition: all 0.25s;
+      &:hover{
+        color: $c-accent-1;
+        border-bottom: 1px solid rgba($c-accent-1,0.5);
+      }
+    }    
+  }
+
+  .about-me__title{
+    display: none;
+  }
+
+  .contact-method{
+    padding-left: 36px;
+    padding-right: 30px;
+    min-height: 40px;
+    position: relative;
+    &:before{
+      font-family: 'icomoon';
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;      
+      line-height: 30px;
+      text-align: center;
+      color: #fff;
+      position: absolute;
+      display: block;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 30px;
+      height: 30px;
+      background: #FFF;
+      border-radius: 50%;
+      background-color: #aaa;
+    }
+  }
+  .experience-in-title{
+    display: inline-block;
+    margin-bottom: 0.5em;
+  }
+  .experience-in{
+    display: inline-block;
+    padding: 0.5em;
+    background: rgba(0,0,0,0.05);
+    margin-bottom: 3px;  
+  }
+
+  .contact-tel{
+    &:before {
+      content: "\e600";
+    }
+  }
+  .contact-email{
+    &:before {
+      content: "\e601";
+    }
+  }
+  .contact-address{
+    &:before {
+      content: "\e602";
+    }
+  }
+  .contact-linkedin{
+    &:before {
+      content: "\e603";
+    }
+  }
+
+}
