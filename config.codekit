@@ -92,6 +92,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/img\/about-crop.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 62380,
+		"inputAbbreviatedPath": "\/img\/about-crop.jpg",
+		"outputAbbreviatedPath": "\/img\/about-crop.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/about-full.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
