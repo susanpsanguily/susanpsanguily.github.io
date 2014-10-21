@@ -1144,3 +1144,5 @@ html {
     content: "\e602"; }
   .about-me .contact-linkedin:before {
     content: "\e603"; }
+  .about-me .contact-twitter:before {
+    content: "\e604"; }
