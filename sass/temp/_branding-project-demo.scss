@@ -168,6 +168,7 @@
 }
 
 .branding-project__box__sub-100x3{
+  @include clearfix;
   width: 100%;
   float: none;
   &:nth-child(n+2){
@@ -237,7 +238,7 @@
 
 .videoWrapper{
   position: relative;
-  padding-bottom: 35.5%;
+  padding-bottom: 75%;
   @media (max-width: 600px){
     padding-bottom: 75.5%;
   }

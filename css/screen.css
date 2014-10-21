@@ -766,6 +766,10 @@ html {
 .branding-project__box__sub-100x3 {
   width: 100%;
   float: none; }
+  .branding-project__box__sub-100x3:after {
+    content: "";
+    display: table;
+    clear: both; }
   .branding-project__box__sub-100x3:nth-child(n+2) {
     margin-top: 20px; }
 
@@ -819,7 +823,7 @@ html {
 
 .videoWrapper {
   position: relative;
-  padding-bottom: 35.5%;
+  padding-bottom: 75%;
   height: 0;
   -moz-box-sizing: content-box;
        box-sizing: content-box; }
