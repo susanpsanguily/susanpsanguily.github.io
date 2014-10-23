@@ -2,11 +2,11 @@
   display: block;
   width: 100%;
 }
-.shadow-effect{
+.borderimage .shadow-effect{
   border-style: solid;
   border-width: 0px 0px 10px;
-  border-image: url(../img/chrome/ellipse-shadow.png) 0 0 40 stretch;
   margin-bottom: -10px;
+  border-image: url(../img/chrome/ellipse-shadow.png) 0 0 40 stretch;
   &.double-shadow{
     border-image: url(../img/chrome/ellipse-shadow-2.png) 0 0 40 stretch;
   }
