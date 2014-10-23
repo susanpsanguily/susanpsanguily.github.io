@@ -844,6 +844,27 @@ html {
 .ml40 {
   margin-left: 40px; }
 
+.project-text {
+  font-size: 15px;
+  background: #FFF;
+  margin-bottom: 40px;
+  padding: 10px 20px; }
+  .project-text:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .project-text-title {
+    font-size: 20px;
+    font-family: "Aleo", "Helvetica Neue", "Roboto", Helvetica, sans-serif;
+    margin-bottom: 0.25em; }
+  .project-text-quote {
+    margin-bottom: 0.5em; }
+  .project-text-quoted {
+    font-size: 13px;
+    text-align: right;
+    color: #ff9934;
+    font-style: italic; }
+
 .cv {
   font-size: 15px;
   line-height: 1.5;

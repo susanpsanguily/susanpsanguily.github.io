@@ -258,3 +258,26 @@
 .ml40{
   margin-left: 40px;
 }
+
+.project-text{
+  @include clearfix;
+  font-size: 15px;
+  background: #FFF;
+  margin-bottom: 40px;
+  padding: ($pad / 2) $pad;
+  &-title{
+    font-size: $default-heading-size;
+    font-family: $serif;
+    margin-bottom: 0.25em;
+  }
+
+  &-quote{
+    margin-bottom: 0.5em;
+  }
+  &-quoted{
+    font-size: 13px;
+    text-align: right;
+    color: $c-accent-1;
+    font-style: italic;
+  }
+}
