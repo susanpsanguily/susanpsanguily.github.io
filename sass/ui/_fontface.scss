@@ -9,6 +9,17 @@
          url('../fonts/aleo/Aleo-Light.ttf') format('truetype'),
          url('../fonts/aleo/Aleo-Light.svg') format('svg');
 }
+ @font-face {
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 300;
+    src: local('Aleo-Light-Italic'), local('Aleo Light Italic'),
+         url('../fonts/aleo/Aleo-Light-italic.eot'),
+         url('../fonts/aleo/Aleo-Light-italic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aleo/Aleo-Light-italic.woff') format('woff'),
+         url('../fonts/aleo/Aleo-Light-italic.ttf') format('truetype'),
+         url('../fonts/aleo/Aleo-Light-italic.svg') format('svg');
+}
  
 @font-face {
     font-family: 'Aleo';

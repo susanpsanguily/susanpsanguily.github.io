@@ -262,17 +262,22 @@
 .project-text{
   @include clearfix;
   font-size: 15px;
-  background: #FFF;
-  margin-bottom: 40px;
-  padding: ($pad / 2) $pad;
+  margin-bottom: 20px;
+  padding: 0 65px;
+  @media (max-width: 600px){
+    padding: 0 42px;
+  }
   &-title{
-    font-size: $default-heading-size;
+    font-size: 18px;
     font-family: $serif;
     margin-bottom: 0.25em;
   }
 
   &-quote{
+    font-family: $serif;
+    font-weight: 300;
     margin-bottom: 0.5em;
+    font-style: italic;
   }
   &-quoted{
     font-size: 13px;

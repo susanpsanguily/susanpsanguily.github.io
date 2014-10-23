@@ -51,6 +51,11 @@ a {
   src: local("Aleo-Light"), local("Aleo Light"), url("../fonts/aleo/Aleo-Light.eot"), url("../fonts/aleo/Aleo-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/aleo/Aleo-Light.woff") format("woff"), url("../fonts/aleo/Aleo-Light.ttf") format("truetype"), url("../fonts/aleo/Aleo-Light.svg") format("svg"); }
 @font-face {
   font-family: 'Aleo';
+  font-style: italic;
+  font-weight: 300;
+  src: local("Aleo-Light-Italic"), local("Aleo Light Italic"), url("../fonts/aleo/Aleo-Light-italic.eot"), url("../fonts/aleo/Aleo-Light-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/aleo/Aleo-Light-italic.woff") format("woff"), url("../fonts/aleo/Aleo-Light-italic.ttf") format("truetype"), url("../fonts/aleo/Aleo-Light-italic.svg") format("svg"); }
+@font-face {
+  font-family: 'Aleo';
   font-style: normal;
   font-weight: 400;
   src: local("Aleo-regular"), local("Aleo Regular"), url("../fonts/aleo/Aleo-Regular.eot"), url("../fonts/aleo/Aleo-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/aleo/Aleo-Regular.woff") format("woff"), url("../fonts/aleo/Aleo-Regular.ttf") format("truetype"), url("../fonts/aleo/Aleo-Regular.svg") format("svg"); }
@@ -846,19 +851,24 @@ html {
 
 .project-text {
   font-size: 15px;
-  background: #FFF;
-  margin-bottom: 40px;
-  padding: 10px 20px; }
+  margin-bottom: 20px;
+  padding: 0 65px; }
   .project-text:after {
     content: "";
     display: table;
     clear: both; }
+  @media (max-width: 600px) {
+    .project-text {
+      padding: 0 42px; } }
   .project-text-title {
-    font-size: 20px;
+    font-size: 18px;
     font-family: "Aleo", "Helvetica Neue", "Roboto", Helvetica, sans-serif;
     margin-bottom: 0.25em; }
   .project-text-quote {
-    margin-bottom: 0.5em; }
+    font-family: "Aleo", "Helvetica Neue", "Roboto", Helvetica, sans-serif;
+    font-weight: 300;
+    margin-bottom: 0.5em;
+    font-style: italic; }
   .project-text-quoted {
     font-size: 13px;
     text-align: right;
