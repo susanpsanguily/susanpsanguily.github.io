@@ -21,8 +21,10 @@ var currentPage = "";
 
 //on closing a portfolio page
 $("body").on('click','.content-viewer__close',function(){
+  var a_href = $(this).attr('href');
   currentPage = location.pathname;
-  historyIt('index.html');
+  historyIt(a_href);
+  event.preventDefault();
   $(".content-viewer").addClass("content-viewer--slide-down");
   setTimeout(function(){
     $(".content-viewer").addClass("content-viewer--empty").removeClass("content-viewer--slide-down");
