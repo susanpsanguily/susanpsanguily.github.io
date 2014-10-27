@@ -226,8 +226,6 @@ html {
   position: absolute;
   z-index: 2;
   top: 120px;
-  height: -webkit-calc(100% - 120px);
-  height: calc(100% - 120px);
   right: 0;
   bottom: 0;
   left: 0;
@@ -253,11 +251,13 @@ html {
     display: flex;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    position: relative; }
   @media (max-width: 600px), (max-height: 700px) {
     .content-viewer .container {
       padding: 0; } }
   .content-viewer__header {
+    position: absolute;
     height: 50px;
     background: #fff;
     z-index: 1;
@@ -323,20 +323,18 @@ html {
       .content-viewer__close:hover:before, .content-viewer__close:hover:after {
         background-color: #FFF; }
   .content-viewer__container {
-    height: -webkit-calc( 100% - 130px);
-    height: calc( 100% - 130px);
+    height: 100%;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
     -webkit-transition: all 0.5s 0.2s;
             transition: all 0.5s 0.2s;
-    padding-top: 40px;
+    padding-top: 80px;
     padding-bottom: 40px;
     -webkit-flex: 1 0 auto;
         -ms-flex: 1 0 auto;
             flex: 1 0 auto; }
     @media (max-width: 600px), (max-height: 700px) {
       .content-viewer__container {
-        padding-top: 20px;
         padding-bottom: 20px; } }
   .content-viewer__controls {
     float: right; }
