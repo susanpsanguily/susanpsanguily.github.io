@@ -1,0 +1,83 @@
+@media print {
+  ////ALL
+  .site-header__nav{
+    display: none;
+  }
+
+  ////PORTFOLIO PAGE
+  //allow portoflio thumbs to print on multiple pages
+  .full-height{
+    overflow: visible;
+  }
+
+  //hide thumbs
+  .section--branding,
+  .section--art-direction {
+    display: none;
+  }
+
+  //allow all images to print
+  .content-viewer,
+  .content-viewer__container,
+  .branding-project-demo-container{
+    overflow: visible;
+    height: auto;
+    
+  }
+  .content-viewer{
+    top:100px;
+  }
+  .content-viewer__controls{
+    display: none;
+  }
+
+  .borderimage .shadow-effect{
+    border: 2px solid #333;
+  }
+  .shadow-effect img{
+            box-shadow: none;
+  }
+
+   ////ABOUT PAGE
+   //hide image as superfluous
+   .about-me .about-image{
+     display: none;
+   }
+  ////RESUME
+  //reduce font-size
+   .cv{
+     font-size: 12px;
+   }
+   .cv__role-points li{
+     &:before{
+      content: "• ";
+      position: static;
+      display: inline;
+      font-weight: 700;
+      color: rgba(102, 102, 102, 0.6);
+     }
+   }
+
+  .print-only{
+    display: block;
+    z-index: 10;
+    font-size: 10px;
+    width: 100%; 
+    .vcard{
+      text-align: center;
+      width: 100%;
+    }
+    p,
+    .contact-method{
+      display: inline-block;
+      padding: 0.2em 0.5em
+    }
+  }
+  .print-only__title{
+    display: none;
+  }
+
+
+}
+
+

@@ -45,7 +45,7 @@
   &:nth-child(n+2){
     margin-left: 20px;
   }
-  @media (max-width: 600px){
+  @media screen and (max-width: 600px){
     width: 100%;
   }
 }
@@ -56,7 +56,7 @@
   &:nth-child(n+2){
     margin-left: 20px;
   }
-  @media (max-width: 600px){
+  @media screen and (max-width: 600px){
     width: 100%;
   }
 }
@@ -67,7 +67,7 @@
   &:nth-child(n+2){
     margin-left: 20px;
   }
-  @media (max-width: 600px){
+  @media screen and (max-width: 600px){
     width: calc(50% - 20px);
     &:nth-child(2n){
       margin-left: 20px;
@@ -123,7 +123,7 @@
   &:nth-child(n+4){
     margin-top: 20px;
   }
-  @media (max-width: 600px){
+  @media screen and (max-width: 600px){
     width: calc(50% - 10px);
     &:nth-child(3n-1),
     &:nth-child(3n){
@@ -182,7 +182,7 @@
   &:nth-child(n+2){
     margin-top: 20px;
   }
-  @media (max-width: 600px){
+  @media screen and (max-width: 600px){
     width: calc(50% - 10px);
     float: left;
     &:nth-child(n+2){
@@ -204,7 +204,7 @@
 
 .branding-project__box-float-right{
   float: right;
-  @media (max-width: 600px){
+  @media screen and (max-width: 600px){
     float: none;
     width: 100%;
     &:nth-child(n+2){
@@ -216,7 +216,7 @@
 }
 .branding-project__box-float-left{
   float: left;
-  @media (max-width: 600px){
+  @media screen and (max-width: 600px){
     float: none;
     width: 100%;
     &:nth-child(n+2){
@@ -239,7 +239,7 @@
 .videoWrapper{
   position: relative;
   padding-bottom: 75%;
-  @media (max-width: 600px){
+  @media screen and (max-width: 600px){
     padding-bottom: 75.5%;
   }
   height: 0;
@@ -264,7 +264,7 @@
   font-size: 15px;
   margin-bottom: 20px;
   padding: 0 65px;
-  @media (max-width: 600px){
+  @media screen and (max-width: 600px){
     padding: 0 42px;
   }
   &-title{

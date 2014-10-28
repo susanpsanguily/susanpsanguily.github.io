@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -122,6 +123,9 @@ html {
   .touch .section:not(.section--intro) .container {
     padding-top: 40px;
     padding-bottom: 40px; }
+
+.print-only {
+  display: none; }
 
 .site-header {
   width: 100%;
@@ -676,7 +680,7 @@ html {
     clear: both; }
   .branding-project__box--20x1:nth-child(n+2) {
     margin-left: 20px; }
-  @media (max-width: 600px) {
+  @media screen and (max-width: 600px) {
     .branding-project__box--20x1 {
       width: 100%; } }
 
@@ -689,7 +693,7 @@ html {
     clear: both; }
   .branding-project__box--25x1:nth-child(n+2) {
     margin-left: 20px; }
-  @media (max-width: 600px) {
+  @media screen and (max-width: 600px) {
     .branding-project__box--25x1 {
       width: 100%; } }
 
@@ -702,7 +706,7 @@ html {
     clear: both; }
   .branding-project__box--25x1-to-50x2:nth-child(n+2) {
     margin-left: 20px; }
-  @media (max-width: 600px) {
+  @media screen and (max-width: 600px) {
     .branding-project__box--25x1-to-50x2 {
       width: -webkit-calc(50% - 20px);
       width: calc(50% - 20px); }
@@ -757,7 +761,7 @@ html {
     margin-left: 20px; }
   .branding-project__box__sub-33x2:nth-child(n+4) {
     margin-top: 20px; }
-  @media (max-width: 600px) {
+  @media screen and (max-width: 600px) {
     .branding-project__box__sub-33x2 {
       width: -webkit-calc(50% - 10px);
       width: calc(50% - 10px); }
@@ -808,7 +812,7 @@ html {
   float: none; }
   .branding-project__box__sub-100x2:nth-child(n+2) {
     margin-top: 20px; }
-  @media (max-width: 600px) {
+  @media screen and (max-width: 600px) {
     .branding-project__box__sub-100x2 {
       width: -webkit-calc(50% - 10px);
       width: calc(50% - 10px);
@@ -825,7 +829,7 @@ html {
 
 .branding-project__box-float-right {
   float: right; }
-  @media (max-width: 600px) {
+  @media screen and (max-width: 600px) {
     .branding-project__box-float-right {
       float: none;
       width: 100%; }
@@ -836,7 +840,7 @@ html {
 
 .branding-project__box-float-left {
   float: left; }
-  @media (max-width: 600px) {
+  @media screen and (max-width: 600px) {
     .branding-project__box-float-left {
       float: none;
       width: 100%; }
@@ -858,7 +862,7 @@ html {
   height: 0;
   -moz-box-sizing: content-box;
        box-sizing: content-box; }
-  @media (max-width: 600px) {
+  @media screen and (max-width: 600px) {
     .videoWrapper {
       padding-bottom: 75.5%; } }
 
@@ -883,7 +887,7 @@ html {
     content: "";
     display: table;
     clear: both; }
-  @media (max-width: 600px) {
+  @media screen and (max-width: 600px) {
     .project-text {
       padding: 0 42px; } }
   .project-text-title {
@@ -1214,3 +1218,61 @@ html {
     content: "\e603"; }
   .about-me .contact-twitter:before {
     content: "\e604"; }
+
+@media print {
+  .site-header__nav {
+    display: none; }
+
+  .full-height {
+    overflow: visible; }
+
+  .section--branding,
+  .section--art-direction {
+    display: none; }
+
+  .content-viewer,
+  .content-viewer__container,
+  .branding-project-demo-container {
+    overflow: visible;
+    height: auto; }
+
+  .content-viewer {
+    top: 100px; }
+
+  .content-viewer__controls {
+    display: none; }
+
+  .borderimage .shadow-effect {
+    border: 2px solid #333; }
+
+  .shadow-effect img {
+    box-shadow: none; }
+
+  .about-me .about-image {
+    display: none; }
+
+  .cv {
+    font-size: 12px; }
+
+  .cv__role-points li:before {
+    content: "• ";
+    position: static;
+    display: inline;
+    font-weight: 700;
+    color: rgba(102, 102, 102, 0.6); }
+
+  .print-only {
+    display: block;
+    z-index: 10;
+    font-size: 10px;
+    width: 100%; }
+    .print-only .vcard {
+      text-align: center;
+      width: 100%; }
+    .print-only p,
+    .print-only .contact-method {
+      display: inline-block;
+      padding: 0.2em 0.5em; }
+
+  .print-only__title {
+    display: none; } }
